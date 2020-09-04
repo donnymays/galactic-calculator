@@ -29,7 +29,7 @@ describe ("Age", () => {
     expect(age.mercuryLifeLeft()).toEqual(183);
   });
   test("Should correctly retun years of life left on Venus in Venus years", () => {
-    expect(age.venusLifeLeft()).toEqual(183);
+    expect(age.venusLifeLeft()).toEqual(71);
   });
 
 });
