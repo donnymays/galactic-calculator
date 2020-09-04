@@ -41,5 +41,8 @@ describe ("Age", () => {
     let overAchieverAge = new Age(150, 78);
     expect(overAchieverAge.yearsOverAchieving()).toEqual(72);
   });
+  test("Should correctly return life expectancy based on life factors", () => {
+    expect(age.affectOnExpectancy()).toEqual();
+  })
 
 });

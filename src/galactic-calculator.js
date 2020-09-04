@@ -54,8 +54,9 @@ export class Age {
   }
 
   affectOnExpectancy() {
-    this.lifeExpectancy = 78;
     let lifeFactors = 0;
+    this.lifeExpectancy = 78;
     this.lifeExpectancy += lifeFactors;
+    return this.lifeExpectancy;
   }
 }
