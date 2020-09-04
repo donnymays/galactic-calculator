@@ -23,6 +23,7 @@ _ _
 | Should correctly ouput years left on Mars in Mars years | 34 | 23 |
 | Should correctly ouput years left on Jupiter in Jupiter years | 34 | 4 |
 | Should correctly ouput years over life expectancy if life expectancy is greater than age | 150 | 72 |
+| Should correctly return life expectancy based on life factors | 78 | 78 |
 
 
 
