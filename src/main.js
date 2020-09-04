@@ -28,8 +28,9 @@ $(document).ready(function() {
     $("#lifeExpectancy").click(function(event) {
       event.preventDefault();
       let genderFactor = parseInt($("input:radio[name=gender]:checked").val());
-    
+      
       let otherFactorsTotal = 0;
+    
       $(":checkbox").change(function() {
         $(":checkbox:checked").each(function() {
           otherFactorsTotal += parseInt($(this).val());
@@ -38,10 +39,11 @@ $(document).ready(function() {
         return otherFactorsTotal;
       });
 
-      // let lifeFactors = genderFactor + otherFactorsTotal;
+      let lifeFactors = genderFactor + otherFactorsTotal;
 
-      // let total = spaceAge.affectOnExpectancy(lifeFactors);
-      console.log(genderFactor);
+      let total = spaceAge.affectOnExpectancy(lifeFactors);
+      console.log(otherFactorsTotal);
+      console.log(total);
    
     });
   });

@@ -9,6 +9,7 @@ export class Age {
   constructor(yearsOnEarth, lifeExpectancy) {
     this.yearsOnEarth = yearsOnEarth;
     this.lifeExpectancy = lifeExpectancy;
+    this.lifeExpectancyFactors = [];
   }
 
   mercuryAge() {
@@ -54,9 +55,10 @@ export class Age {
   }
 
   affectOnExpectancy() {
-    let lifeFactors;
-    this.lifeExpectancy = 78;
-    this.lifeExpectancy += lifeFactors;
-    return this.lifeExpectancy;
+    let factorsTotal = 0;
+    for (i=0; i < factorsArr.length; i++) {
+      factorsTotal += factorsArr[i];
+      this.lifeExpectancy += factorsTotal; 
+    }
   }
 }
