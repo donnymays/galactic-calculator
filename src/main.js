@@ -8,7 +8,6 @@ $(document).ready(function() {
   $("#galacticForm").submit(function(event) {
     event.preventDefault();
     
-    
     let ageInput = parseInt($("#ageInput").val());
     
     let spaceAge = new Age(ageInput);
@@ -24,12 +23,5 @@ $(document).ready(function() {
     $("span#jupiterAge").text(ageOnJupiter);
 
     $("#planets").show();
-
-
-
-   
-  
-    
-
   });
 });
