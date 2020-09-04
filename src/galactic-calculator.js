@@ -9,7 +9,6 @@ export class Age {
   constructor(yearsOnEarth, lifeExpectancy) {
     this.yearsOnEarth = yearsOnEarth;
     this.lifeExpectancy = lifeExpectancy;
-    this.lifeExpectancyFactors = [];
   }
 
   mercuryAge() {
@@ -51,15 +50,6 @@ export class Age {
   yearsOverAchieving() {
     if (this.yearsOnEarth > this.lifeExpectancy) {
       return this.yearsOnEarth - this.lifeExpectancy;
-    }
-  }
-
-  affectOnExpectancy() {
-    let factorsTotal = 0;
-    for (i=0; i < factorsArr.length; i++) {
-      factorsTotal += factorsArr[i];
-      this.lifeExpectancy += factorsTotal;
-      return this.lifeExpectancy;
     }
   }
 }

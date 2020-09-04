@@ -24,20 +24,3 @@ $(document).ready(function() {
 
     $("#planets").show();
   });
-
-
-  $("#lifeExpectancy").click(function(event) {
-    event.preventDefault();
-    
-    let genderFactor = parseInt($("input:radio[name=gender]:checked").val());
-    let lifeAge = new Age(genderFactor)
-    $("input:checkbox[name=lifeFactors:checked").each(function(){
-      lifeAge.lifeExpectancyFactors.push(parseInt($(this).val()));
-    })
-
-    lifeAge.lifeExpectancy = lifeAge.affectOnExpectancy(lifeAge.lifeExpectancyFactors);
-
-    console.log(lifeAge.lifeExpectancy);
-
-  });
-});
