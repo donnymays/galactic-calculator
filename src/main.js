@@ -5,7 +5,7 @@ import './css/styles.css';
 import { Age } from "./../src/galactic-calculator.js";
 
 $(document).ready(function() {
-  $("#galacticForm").click(function(event) {
+  $("#galacticForm").submit(function(event) {
     event.preventDefault();
     
     let ageInput = parseInt($("#ageInput").val());
@@ -24,3 +24,4 @@ $(document).ready(function() {
 
     $("#planets").show();
   });
+});

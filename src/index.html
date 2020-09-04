@@ -6,7 +6,7 @@
   <title>Galactic Calculator</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <div class="jumbotron">
       <h1>Galactic Calculator</h1>
       <p>Calculate Your Age on Different Planets!</p>
@@ -16,91 +16,57 @@
       <label for="ageInput">What is your age?</label>
       <input id="ageInput" type="text">
       </div>
-      <button class="btn btn-dark" type="button" id="btn-submit">Submit!</button>
+      <button class="btn btn-dark" type="submit" id="btn-submit">Submit!</button>
     </form>
-    <div id="planets">
-      <div class="row">
-        <div class="language-coloumn col-md-3">
-          <div id="mercury">
-            <div class="card">
-              <img class="card-img-top mx-auto" src="https://solarsystem.nasa.gov/system/stellar_items/image_files/2_feature_1600x900_mercury.jpg" alt="Mercury image">
-              <div class="card-body">
-                <h5 class="card-title">Mercury</h5>
-                <p class="card-text">You are <span id="mercuryAge"></span> in Mercury years!</p>
+    <section class = "planet-cards">
+      <div id="planets">
+        <div class="row">
+          <div class="language-coloumn col-md-3">
+            <div id="mercury">
+              <div class="card">
+                <img class="card-img-top mx-auto" src="https://1.bp.blogspot.com/-dg53m9dMGow/XJIIDwVXCqI/AAAAAAAAAUE/-rs3hG6xeC0xXujU8MXZPlgYZthiO5J9wCEwYBhgL/s1600/Screenshot_20190320-145424.png" alt="Mercury image">
+                <div class="card-body">
+                  <h5 class="card-title">Mercury</h5>
+                  <p class="card-text">You are <span id="mercuryAge"></span> in Mercury years!</p>
+                </div>
               </div>
-            </div>
-          </div>  
-        </div>
-        <div class="language-coloumn col-md-3">
-          <div id="venus">
-            <div class="card">
-              <img class="card-img-top mx-auto" src="https://solarsystem.nasa.gov/internal_resources/4319" alt="Venus image">
-              <div class="card-body">
-                <h5 class="card-title">Venus</h5>
-                <p class="card-text">You are <span id="venusAge"></span> in Venus years!</p>
+            </div>  
+          </div>
+          <div class="language-coloumn col-md-3">
+            <div id="venus">
+              <div class="card">
+                <img class="card-img-top mx-auto" src="https://solarsystem.nasa.gov/internal_resources/4319" alt="Venus image">
+                <div class="card-body">
+                  <h5 class="card-title">Venus</h5>
+                  <p class="card-text">You are <span id="venusAge"></span> in Venus years!</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="language-coloumn col-md-3">
-          <div id="mars">
-            <div class="card">
-              <img class="card-img-top mx-auto" src="https://static01.nyt.com/images/2017/04/29/science/29tb-mars_promo/29tb-mars_promo-videoSixteenByNineJumbo1600.jpg" alt="Mars image">
-              <div class="card-body">
-                <h5 class="card-title">Mars</h5>
-                <p class="card-text">You are <span id="marsAge"></span> in Mars years!</p>
+          <div class="language-coloumn col-md-3">
+            <div id="mars">
+              <div class="card">
+                <img class="card-img-top mx-auto" src="https://static01.nyt.com/images/2017/04/29/science/29tb-mars_promo/29tb-mars_promo-videoSixteenByNineJumbo1600.jpg" alt="Mars image">
+                <div class="card-body">
+                  <h5 class="card-title">Mars</h5>
+                  <p class="card-text">You are <span id="marsAge"></span> in Mars years!</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="language-coloumn col-md-3">
-          <div id="jupiter">
-            <div class="card">
-              <img class="card-img-top mx-auto" src="https://cdn.hswstatic.com/gif/jupiter.jpg" alt="Jupiter image">
-              <div class="card-body">
-                <h5 class="card-title">Jupiter</h5>
-                <p class="card-text">You are <span id="jupiterAge"></span> in Jupiter years!</p>
+          <div class="language-coloumn col-md-3">
+            <div id="jupiter">
+              <div class="card">
+                <img class="card-img-top mx-auto" src="https://cdn.hswstatic.com/gif/jupiter.jpg" alt="Jupiter image">
+                <div class="card-body">
+                  <h5 class="card-title">Jupiter</h5>
+                  <p class="card-text">You are <span id="jupiterAge"></span> in Jupiter years!</p>
+                </div>
               </div>
-            </div>
-          </div> 
-        </div>
-      </div>
-    </div>
-    <form id="lifeExpectancy">
-      <div class="form-group">
-        <div class="size-radios">
-          <h2>Gender assigned at birth:</h2>
-          <label class="radio-inline">
-            <input type="radio" name="gender" value="0" checked>
-            Male
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="gender" value="7">
-            Female
-          </label>
-        </div>
-      </div>
-        <hr>
-          <h2>Please select all that apply</h2>
-          <div class="row">
-            <div class="col-6">
-              <p>Life Expectancy Factors:</p>
-              <input type="checkbox" id="degree" name="lifeFactors" value="2">
-              <label for="degree">I have a bachelor's degree</label><br>
-              <input type="checkbox" id="smoker" name="lifeFactors" value="-8">
-              <label for="smoker">I smoke tobacco</label><br>
-              <input type="checkbox" id="exercise" name="lifeFactors" value="4">
-              <label for="exercise">I excercise regularly</label><br>
-              <input type="checkbox" id="foods" name="lifeFactors" value="3">
-              <label for="foods">I eat healthy foods most of the time</label><br>
-              <input type="checkbox" id="driveFast" name="lifeFactors" value="-15">
-              <label for="driveFast">I often drive in excess of 100 mph</label><br>
-            </div>
-            <button class="btn btn-dark" type="button" id="btn-click">Submit!</button>
+            </div> 
           </div>
+        </div>
       </div>
-    </form>
+    </section>
   </div>
-  
-
 </body>
