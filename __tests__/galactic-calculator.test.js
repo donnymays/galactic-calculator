@@ -37,5 +37,9 @@ describe ("Age", () => {
   test("Should correctly retun years of life left on Jupiter in Jupiter years", () => {
     expect(age.jupiterLifeLeft()).toEqual(4);
   });
+  test("Should correctly return years past life expectancy if input age is greater than life expectancy",  () => {
+    let overAchieverAge = new Age(150, 78);
+    expect(overAchieverAge.yearsOverAchieving()).toEqual();
+  });
 
 });
