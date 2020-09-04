@@ -1,5 +1,5 @@
 const yearsOnMercury = 0.24;
-
+const yearsOnVenus = 0.62
 
 export class Age {
   constructor(yearsOnEarth, lifeExpectancy) {
@@ -9,7 +9,11 @@ export class Age {
 
   mercuryAge() {
     return Math.round(this.yearsOnEarth / yearsOnMercury);
-  }
+  };
+
+  venusAge() {
+    return Math.round(this.yearsOnEarth / yearsOnVenus);
+  };
 };
 
 

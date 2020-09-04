@@ -9,5 +9,8 @@ describe ("Age", () => {
   });
   test("Should correctly retun age in Mercury years from input of age in Earth years", () => {
     expect(age.mercuryAge()).toEqual(142);
+  });
+  test("Should correctly retun age in Venus years from input of age in Earth years", () => {
+    expect(age.venusAge()).toEqual();
   })
 });
