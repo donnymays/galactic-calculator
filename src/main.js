@@ -5,7 +5,7 @@ import './css/styles.css';
 import { Age } from "./../src/galactic-calculator.js";
 
 $(document).ready(function() {
-  $("#galacticForm").submit(function(event) {
+  $("#galacticForm").click(function(event) {
     event.preventDefault();
     
     let ageInput = parseInt($("#ageInput").val());
@@ -23,5 +23,26 @@ $(document).ready(function() {
     $("span#jupiterAge").text(ageOnJupiter);
 
     $("#planets").show();
+
+
+    $("#lifeExpectancy").click(function(event) {
+      event.preventDefault();
+      let genderFactor = parseInt($("input:radio[name=gender]:checked").val());
+    
+      let otherFactorsTotal = 0;
+      $(":checkbox").change(function() {
+        $(":checkbox:checked").each(function() {
+          otherFactorsTotal += parseInt($(this).val());
+        });
+        
+        return otherFactorsTotal;
+      });
+
+      // let lifeFactors = genderFactor + otherFactorsTotal;
+
+      // let total = spaceAge.affectOnExpectancy(lifeFactors);
+      console.log(genderFactor);
+   
+    });
   });
 });

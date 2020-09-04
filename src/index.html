@@ -16,7 +16,7 @@
       <label for="ageInput">What is your age?</label>
       <input id="ageInput" type="text">
       </div>
-      <button class="btn btn-dark" type="submit" id="btn-submit">Submit!</button>
+      <button class="btn btn-dark" type="button" id="btn-submit">Submit!</button>
     </form>
     <div id="planets">
       <div class="row">
@@ -66,7 +66,40 @@
         </div>
       </div>
     </div>
-    
+    <form id="lifeExpectancy">
+      <div class="form-group">
+        <div class="size-radios">
+          <h2>Gender assigned at birth:</h2>
+          <label class="radio-inline">
+            <input type="radio" name="gender" value="0" checked>
+            Male
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="gender" value="7">
+            Female
+          </label>
+        </div>
+      </div>
+        <hr>
+          <h2>Please select all that apply</h2>
+          <div class="row">
+            <div class="col-6">
+              <p>Life Expectancy Factors:</p>
+              <input type="checkbox" id="degree" name="lifeFactors" value="2">
+              <label for="degree">I have a bachelor's degree</label><br>
+              <input type="checkbox" id="smoker" name="lifeFactors" value="-8">
+              <label for="smoker">I smoke tobacco</label><br>
+              <input type="checkbox" id="exercise" name="lifeFactors" value="4">
+              <label for="exercise">I excercise regularly</label><br>
+              <input type="checkbox" id="foods" name="lifeFactors" value="3">
+              <label for="foods">I eat healthy foods most of the time</label><br>
+              <input type="checkbox" id="driveFast" name="lifeFactors" value="-15">
+              <label for="driveFast">I often drive in excess of 100 mph</label><br>
+            </div>
+            <button class="btn btn-dark" type="button" id="btn-click">Submit!</button>
+          </div>
+      </div>
+    </form>
   </div>
   
 
