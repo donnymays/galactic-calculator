@@ -36,6 +36,10 @@ export class Age {
   venusLifeLeft() {
     return Math.round((this.lifeExpectancy - this.yearsOnEarth) / yearsOnVenus);
   };
+  
+  marsLifeLeft() {
+    return Math.round((this.lifeExpectancy - this.yearsOnEarth) / yearsOnMars);
+  };
 };
 
 
