@@ -13,7 +13,8 @@ _ _
 |---|---|---|
 | Should correctly create Age class with age in Earth years | 34 | 34 |
 | Should correctly ouput age in Mercury years from input of age in Earth years | 34 | 142 |
-| 
+| Should correctly ouput age in Venus years from input of age in Earth years | 34 | 55 |
+
 
 
 ## Setup/Installation Requirements
