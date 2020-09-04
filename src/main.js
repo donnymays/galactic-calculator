@@ -7,12 +7,17 @@ import { Age } from "./../src/galactic-calculator.js";
 $(document).ready(function() {
   $("#galacticForm").submit(function(event) {
     event.preventDefault();
-
+    
+    
     let ageInput = parseInt($("#ageInput").val());
-    let ageOnMercury = Age.prototype.mercuryAge(ageInput); 
-    let ageOnVenus = Age.prototype.venusAge(ageInput); 
-    let ageOnMars = Age.prototype.marsAge(ageInput); 
-    let ageOnJupiter = Age.prototype.jupiterAge(ageInput); 
+    let spaceAge = new Age(ageInput);
+
+    
+    console.log(ageInput);
+    let ageOnMercury = spaceAge.mercuryAge(ageInput); 
+    let ageOnVenus = spaceAge.venusAge(ageInput); 
+    let ageOnMars = spaceAge.marsAge(ageInput); 
+    let ageOnJupiter = spaceAge.jupiterAge(ageInput); 
 
     $("span#mercuryAge").text(ageOnMercury);
     $("span#venusAge").text(ageOnVenus);
