@@ -1,6 +1,6 @@
-# _Donny's Pizza Joint_
+# _Galactic Calculator_
 
-#### _Object Oriented Javascript Project, Created _
+#### _Test Driven Development Project, Created _
 
 #### By _**Donny Mays**_
 
@@ -15,6 +15,8 @@ _ _
 | Should correctly ouput age in Mercury years from input of age in Earth years | 34 | 142 |
 | Should correctly ouput age in Venus years from input of age in Earth years | 34 | 55 |
 | Should correctly ouput age in Mars years from input of age in Earth years | 34 | 18 |
+| Should correctly ouput age in Jupiter years from input of age in Earth years | 34 | 3 |
+| Should correctly create Age class with life expectancy in Earth years | 78 | 
 
 
 

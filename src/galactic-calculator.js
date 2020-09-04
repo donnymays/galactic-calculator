@@ -24,6 +24,10 @@ export class Age {
   jupiterAge() {
     return Math.round(this.yearsOnEarth / yearsOnJupiter);
   };
+
+  earthLifeLeft() {
+    return Math.round(this.lifeExpectancy - this.yearsOnEarth);
+  };
 };
 
 

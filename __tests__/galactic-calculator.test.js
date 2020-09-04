@@ -17,6 +17,15 @@ describe ("Age", () => {
     expect(age.marsAge()).toEqual(18);
   });
   test("Should correctly retun age in Jupiter years from input of age in Earth years", () => {
-    expect(age.jupiterAge()).toEqual();
+    expect(age.jupiterAge()).toEqual(3);
   });
+  test("Should correctly create Age class with life expectancy in Earth years", () => {
+    expect(age.lifeExpectancy).toEqual();
+  });
+ 
+ 
+  // test("Should correctly retun years of life left on Earth", () => {
+  //   expect(age.earthLifeLeft()).toEqual();
+  // });
+
 });
