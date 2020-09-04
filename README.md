@@ -28,7 +28,6 @@ _The Galactic Calculator is a web application that takes in a users age and retu
 
 ## Setup/Installation Requirements
 
-* _To view this project as a website visit:  _
 * _To view and/or edit the files for this project:_
 * _Open a command line tool_
 * _Navigate to the desktop (or whatever directory you'd like to save the files) using the cd command_
