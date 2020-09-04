@@ -16,4 +16,7 @@ describe ("Age", () => {
   test("Should correctly retun age in Venus years from input of age in Earth years", () => {
     expect(age.marsAge()).toEqual(18);
   });
+  test("Should correctly retun age in Jupiter years from input of age in Earth years", () => {
+    expect(age.jupiterAge()).toEqual();
+  });
 });
