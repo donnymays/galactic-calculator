@@ -8,7 +8,7 @@ export class Age {
   };
 
   mercuryAge() {
-    return (this.yearsOnEarth / yearsOnMercury);
+    return Math.round(this.yearsOnEarth / yearsOnMercury);
   }
 };
 
