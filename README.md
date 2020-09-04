@@ -1,12 +1,12 @@
 # _Galactic Calculator_
 
-#### _Test Driven Development Project, Created _
+#### _Test Driven Development Project, Created 9.4.2020_
 
 #### By _**Donny Mays**_
 
 ## Description
 
-_ _
+_The Galactic Calculator is a web application that takes in a users age and returns their age on other planets based on their orbits._
 
 ## Specifications
 |  Spec | Input  | Output  |
@@ -23,7 +23,6 @@ _ _
 | Should correctly ouput years left on Mars in Mars years | 34 | 23 |
 | Should correctly ouput years left on Jupiter in Jupiter years | 34 | 4 |
 | Should correctly ouput years over life expectancy if life expectancy is greater than age | 150 | 72 |
-| Should correctly return life expectancy based on life factors | 78 | 78 |
 
 
 
@@ -33,8 +32,8 @@ _ _
 * _To view and/or edit the files for this project:_
 * _Open a command line tool_
 * _Navigate to the desktop (or whatever directory you'd like to save the files) using the cd command_
-* _Input: $ git clone _
-* _Then: $ cd _
+* _Input: $ git clone https://github.com/donnymays/galactic-calculator.git_
+* _Then: $ cd galactic-calculator_
 * _Then: $ code ._
 
 
@@ -44,7 +43,7 @@ _Please contact Donny Mays at dtmays2@gmail.com with any questions or concerns, 
 
 ## Technologies Used
 
-_This project was built using ._
+_This project was built using HTML, CSS, Javascript & jQuery and Bootstrap frameworks._
 
 ### License
 
