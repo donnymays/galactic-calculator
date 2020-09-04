@@ -16,11 +16,13 @@ $(document).ready(function() {
     let ageOnVenus = spaceAge.venusAge(ageInput); 
     let ageOnMars = spaceAge.marsAge(ageInput); 
     let ageOnJupiter = spaceAge.jupiterAge(ageInput); 
+  
+    
 
-    $("span#mercuryAge").text(ageOnMercury);
-    $("span#venusAge").text(ageOnVenus);
-    $("span#marsAge").text(ageOnMars);
-    $("span#jupiterAge").text(ageOnJupiter);
+    $("span#mercuryAge").text(`You are ${ageOnMercury} years old`);
+    $("span#venusAge").text(`You are ${ageOnVenus} years old`);
+    $("span#marsAge").text(`You are ${ageOnMars} years old`);
+    $("span#jupiterAge").text(`You are ${ageOnJupiter} years old`);
 
     $("#planets").show();
   });
