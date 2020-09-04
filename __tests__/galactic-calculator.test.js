@@ -26,7 +26,10 @@ describe ("Age", () => {
     expect(age.earthLifeLeft()).toEqual(44);
   });
   test("Should correctly retun years of life left on Mercury in Mercury years", () => {
-    expect(age.mercuryLifeLeft()).toEqual();
+    expect(age.mercuryLifeLeft()).toEqual(183);
+  });
+  test("Should correctly retun years of life left on Venus in Venus years", () => {
+    expect(age.venusLifeLeft()).toEqual(183);
   });
 
 });

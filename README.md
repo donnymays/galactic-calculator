@@ -18,7 +18,8 @@ _ _
 | Should correctly ouput age in Jupiter years from input of age in Earth years | 34 | 3 |
 | Should correctly create Age class with life expectancy in Earth years | 78 | 78 |
 | Should correctly ouput years left on Earth by subracting age on Earth from life expectancy | 34 | 44 |
-| Should correctly ouput years left on Mercury in Mercury years | 34 | 44 |
+| Should correctly ouput years left on Mercury in Mercury years | 34 | 183 |
+| Should correctly ouput years left on Venus in Mercury years | 34 |  |
 
 
 
