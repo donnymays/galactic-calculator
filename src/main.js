@@ -10,10 +10,9 @@ $(document).ready(function() {
     
     
     let ageInput = parseInt($("#ageInput").val());
+    
     let spaceAge = new Age(ageInput);
 
-    
-    console.log(ageInput);
     let ageOnMercury = spaceAge.mercuryAge(ageInput); 
     let ageOnVenus = spaceAge.venusAge(ageInput); 
     let ageOnMars = spaceAge.marsAge(ageInput); 
@@ -23,6 +22,11 @@ $(document).ready(function() {
     $("span#venusAge").text(ageOnVenus);
     $("span#marsAge").text(ageOnMars);
     $("span#jupiterAge").text(ageOnJupiter);
+
+    $("#planets").show();
+
+
+
    
   
     
