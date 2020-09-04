@@ -11,7 +11,7 @@ _ _
 ## Specifications
 |  Spec | Input  | Output  |
 |---|---|---|
-|
+| Should correctly create Age class with age in Earth years | 34 |
 
 ## Setup/Installation Requirements
 
