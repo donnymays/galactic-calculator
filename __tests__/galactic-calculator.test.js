@@ -22,8 +22,11 @@ describe ("Age", () => {
   test("Should correctly create Age class with life expectancy in Earth years", () => {
     expect(age.lifeExpectancy).toEqual(78);
   });
-  test("Should correctly retun years of life left on Earth", () => {
+  test("Should correctly retun years of life left on Earth by subtracting age in Earth years from life expectancy", () => {
     expect(age.earthLifeLeft()).toEqual(44);
+  });
+  test("Should correctly retun years of life left on Mercury in Mercury years", () => {
+    expect(age.mercuryLifeLeft()).toEqual();
   });
 
 });

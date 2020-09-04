@@ -28,6 +28,10 @@ export class Age {
   earthLifeLeft() {
     return Math.round(this.lifeExpectancy - this.yearsOnEarth);
   };
+
+  mercuryLifeLeft() {
+    return Math.round((this.lifeExpectancy - this.yearsOnEarth) / yearsOnMercury);
+  };
 };
 
 
