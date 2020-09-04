@@ -8,6 +8,6 @@ describe ("Age", () => {
     expect(age.yearsOnEarth).toEqual(34);
   });
   test("Should correctly retun age in Mercury years from input of age in Earth years", () => {
-    expect(age.mercuryAge()).toEqual();
+    expect(age.mercuryAge()).toEqual(142);
   })
 });
