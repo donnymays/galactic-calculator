@@ -23,28 +23,21 @@ $(document).ready(function() {
     $("span#jupiterAge").text(ageOnJupiter);
 
     $("#planets").show();
+  });
 
 
-    $("#lifeExpectancy").click(function(event) {
-      event.preventDefault();
-      let genderFactor = parseInt($("input:radio[name=gender]:checked").val());
-      
-      let otherFactorsTotal = 0;
+  $("#lifeExpectancy").click(function(event) {
+    event.preventDefault();
     
-      $(":checkbox").change(function() {
-        $(":checkbox:checked").each(function() {
-          otherFactorsTotal += parseInt($(this).val());
-        });
-        
-        return otherFactorsTotal;
-      });
+    let genderFactor = parseInt($("input:radio[name=gender]:checked").val());
+    let lifeAge = new Age(genderFactor)
+    $("input:checkbox[name=lifeFactors:checked").each(function(){
+      lifeAge.lifeExpectancyFactors.push(parseInt($(this).val()));
+    })
 
-      let lifeFactors = genderFactor + otherFactorsTotal;
+    lifeAge.lifeExpectancy = lifeAge.affectOnExpectancy(lifeAge.lifeExpectancyFactors);
 
-      let total = spaceAge.affectOnExpectancy(lifeFactors);
-      console.log(otherFactorsTotal);
-      console.log(total);
-   
-    });
+    console.log(lifeAge.lifeExpectancy);
+
   });
 });

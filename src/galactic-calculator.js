@@ -58,7 +58,8 @@ export class Age {
     let factorsTotal = 0;
     for (i=0; i < factorsArr.length; i++) {
       factorsTotal += factorsArr[i];
-      this.lifeExpectancy += factorsTotal; 
+      this.lifeExpectancy += factorsTotal;
+      return this.lifeExpectancy;
     }
   }
 }
