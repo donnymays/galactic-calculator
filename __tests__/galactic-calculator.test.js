@@ -32,7 +32,7 @@ describe ("Age", () => {
     expect(age.venusLifeLeft()).toEqual(71);
   });
   test("Should correctly retun years of life left on Mars in Mars years", () => {
-    expect(age.marsLifeLeft()).toEqual(71);
+    expect(age.marsLifeLeft()).toEqual(23);
   });
 
 });
