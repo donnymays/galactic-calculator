@@ -34,5 +34,8 @@ describe ("Age", () => {
   test("Should correctly retun years of life left on Mars in Mars years", () => {
     expect(age.marsLifeLeft()).toEqual(23);
   });
+  test("Should correctly retun years of life left on Jupiter in Jupiter years", () => {
+    expect(age.jupiterLifeLeft()).toEqual(23);
+  });
 
 });

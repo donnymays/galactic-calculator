@@ -20,7 +20,8 @@ _ _
 | Should correctly ouput years left on Earth by subracting age on Earth from life expectancy | 34 | 44 |
 | Should correctly ouput years left on Mercury in Mercury years | 34 | 183 |
 | Should correctly ouput years left on Venus in Mercury years | 34 | 71 |
-| Should correctly ouput years left on Mars in Mars years | 34 |  |
+| Should correctly ouput years left on Mars in Mars years | 34 | 23 |
+| Should correctly ouput years left on Jupiter in Jupiter years | 34 |  |
 
 
 
