@@ -39,7 +39,7 @@ describe ("Age", () => {
   });
   test("Should correctly return years past life expectancy if input age is greater than life expectancy",  () => {
     let overAchieverAge = new Age(150, 78);
-    expect(overAchieverAge.yearsOverAchieving()).toEqual();
+    expect(overAchieverAge.yearsOverAchieving()).toEqual(72);
   });
 
 });
