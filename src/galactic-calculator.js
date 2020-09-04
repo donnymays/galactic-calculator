@@ -52,9 +52,6 @@ export class Age {
       return this.yearsOnEarth - this.lifeExpectancy;
     };
   };
-
-
-
 };
 
 

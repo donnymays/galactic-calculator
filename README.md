@@ -22,7 +22,7 @@ _ _
 | Should correctly ouput years left on Venus in Mercury years | 34 | 71 |
 | Should correctly ouput years left on Mars in Mars years | 34 | 23 |
 | Should correctly ouput years left on Jupiter in Jupiter years | 34 | 4 |
-| Should correctly ouput years over life expectancy if life expectancy is greater than age | 150 |  |
+| Should correctly ouput years over life expectancy if life expectancy is greater than age | 150 | 72 |
 
 
 
