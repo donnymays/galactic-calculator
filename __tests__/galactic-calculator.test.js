@@ -23,7 +23,7 @@ describe ("Age", () => {
     expect(age.lifeExpectancy).toEqual(78);
   });
   test("Should correctly retun years of life left on Earth", () => {
-    expect(age.earthLifeLeft()).toEqual();
+    expect(age.earthLifeLeft()).toEqual(44);
   });
 
 });
