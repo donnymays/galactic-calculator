@@ -20,7 +20,7 @@ describe ("Age", () => {
     expect(age.jupiterAge()).toEqual(3);
   });
   test("Should correctly create Age class with life expectancy in Earth years", () => {
-    expect(age.lifeExpectancy).toEqual();
+    expect(age.lifeExpectancy).toEqual(78);
   });
  
  
