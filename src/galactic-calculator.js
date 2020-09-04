@@ -1,10 +1,16 @@
+const yearsOnMercury = 0.24;
+
 
 export class Age {
   constructor(yearsOnEarth, lifeExpectancy) {
     this.yearsOnEarth = yearsOnEarth;
     this.lifeExpectancy = lifeExpectancy;
+  };
+
+  mercuryAge() {
+    return (this.yearsOnEarth / yearsOnMercury);
   }
-}
+};
 
 
 

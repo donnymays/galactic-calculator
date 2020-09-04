@@ -7,4 +7,7 @@ describe ("Age", () => {
   test("Should correctly create Age class with age in Earth years", () => {
     expect(age.yearsOnEarth).toEqual(34);
   });
+  test("Should correctly retun age in Mercury years from input of age in Earth years", () => {
+    expect(age.mercuryAge()).toEqual();
+  })
 });

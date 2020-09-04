@@ -11,7 +11,8 @@ _ _
 ## Specifications
 |  Spec | Input  | Output  |
 |---|---|---|
-| Should correctly create Age class with age in Earth years | 34 |
+| Should correctly create Age class with age in Earth years | 34 | 34 |
+| Shoudl correctly ouput age in Mercury years from input of age in Earth years |
 
 ## Setup/Installation Requirements
 
