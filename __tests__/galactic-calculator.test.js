@@ -42,7 +42,7 @@ describe ("Age", () => {
     expect(overAchieverAge.yearsOverAchieving()).toEqual(72);
   });
   test("Should correctly return life expectancy based on life factors", () => {
-    expect(affectOnExpectancy()).toEqual(15);
+    expect(affectOnExpectancy()).toEqual(46);
     function affectOnExpectancy() {
       let lifeFactors = 12
       let yearsOnEarth = 34
