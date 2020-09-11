@@ -46,7 +46,8 @@ describe ("Age", () => {
     function affectOnExpectancy() {
       let lifeFactors = 12
       let yearsOnEarth = 34
-      lifeFactors += yearsOnEarth
+      yearsOnEarth += lifeFactors;
+      return yearsOnEarth;
     } 
     
     
